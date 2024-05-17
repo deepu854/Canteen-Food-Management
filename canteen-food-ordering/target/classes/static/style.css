@@ -1,0 +1,212 @@
+/* Reset some basic elements for consistency across browsers */
+body, h1, h2, h3, p, div, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9f7f9; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#menuItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    background-color: #f8f9fa;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+    color: #007bff;
+}
+
+.menu-item p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.menu-item button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.menu-item button:hover {
+    background-color: #218838;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quantity-controls button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.quantity-controls button:hover {
+    background-color: #0056b3;
+}
+
+.quantity-controls span {
+    font-size: 14px;
+    color: #333;
+}
+
+#cartIndicator {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+button.order-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.order-button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+form h2 {
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#orderSummary {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#orderSummaryTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+#orderSummaryTable th, #orderSummaryTable td {
+    border: 1px solid #ced4da;
+    padding: 10px;
+    text-align: left;
+}
+
+#orderSummaryTable th {
+    background-color: #007bff;
+    color: white;
+}
+
+.order-total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+#orderConfirmation {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #28a745;
+}
+
+.hidden {
+    display: none;
+}

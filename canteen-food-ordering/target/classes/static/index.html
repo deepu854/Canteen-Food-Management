@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Food Ordering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Canteen Food Ordering System</h1>
+    <div id="menuItems"></div>
+
+    <div id="cartIndicator" class="hidden">Items in Cart: <span id="cartCount">0</span></div>
+    <button id="placeOrderButton" class="hidden" disabled>Place Order</button>
+
+    <form id="orderForm" class="hidden">
+        <h2>Your Details</h2>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="contactNumber">Contact Number</label>
+            <input type="text" id="contactNumber" name="contactNumber" required>
+        </div>
+        <div class="form-group">
+            <label for="deliveryAddress">Delivery Address</label>
+            <textarea id="deliveryAddress" name="deliveryAddress" required></textarea>
+        </div>
+        <button type="submit" class="order-button">Proceed to Payment</button>
+    </form>
+
+    <div id="orderSummary" class="hidden">
+        <h2>Order Summary</h2>
+        <table id="orderSummaryTable">
+            <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <p class="order-total">Total Price: ₹<span id="orderTotal"></span></p>
+        <button id="payNowButton" class="order-button hidden">Pay Now</button>
+    </div>
+
+    <div id="orderConfirmation" class="hidden"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
